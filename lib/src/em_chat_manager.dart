@@ -30,7 +30,7 @@ import 'internal/inner_headers.dart';
 /// ```
 /// ~end
 class EMChatManager {
-  final Map<String, EMChatEventHandler> _eventHandlesMap = {};
+   static Map<String, EMChatEventHandler> _eventHandlesMap = {};
 
   /// @nodoc
   EMChatManager() {

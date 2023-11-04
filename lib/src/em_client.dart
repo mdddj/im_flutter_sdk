@@ -25,9 +25,10 @@ class EMClient {
   final EMPresenceManager _presenceManager = EMPresenceManager();
   final EMChatThreadManager _chatThreadManager = EMChatThreadManager();
 
-  final Map<String, EMConnectionEventHandler> _connectionEventHandler = {};
+  static Map<String, EMConnectionEventHandler> _connectionEventHandler = {};
   final Map<String, EMMultiDeviceEventHandler> _multiDeviceEventHandler = {};
 
+  Map<String, EMConnectionEventHandler> get events => _connectionEventHandler;
   // ignore: unused_field
   EMProgressManager? _progressManager;
 
